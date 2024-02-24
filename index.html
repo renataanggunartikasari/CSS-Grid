@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+      }
+      .header {
+        grid-area: header;
+        font-size: 30px;
+        text-align: center;
+      }
+      .menu {
+        grid-area: menu;
+        display: flex;
+        font-size: 24px;
+      }
+      .main1 {
+        grid-area: main1;
+        text-align: center;
+      }
+
+      .main2 {
+        grid-area: main2;
+        text-align: center;
+      }
+
+      .main3 {
+        grid-area: main3;
+        text-align: center;
+      }
+
+      .main4 {
+        grid-area: main4;
+        text-align: center;
+      }
+
+      img {
+        padding: 30px;
+      }
+      .footer {
+        grid-area: footer;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 10px;
+        height: 80px;
+        line-height: 150px;      
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header"
+          "menu main1 main2 main3 main4"
+          "menu main1 main2 main3 main4"
+          "footer footer footer footer footer";
+        grid-template-rows: 1fr 1fr 1.5fr 1fr;
+        gap: 10px;
+        background-color: purple;
+        padding: 20px;
+        height: 97vh;
+      }
+
+      .grid-container > div {
+        background-color: plum;
+        padding: 20px 0;
+        margin: 0;
+        padding: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <h1>Aespa</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>Members</li>
+          <li>Karina</li>
+          <li>Winter</li>
+          <li>Giselle</li>
+          <li>Ningning</li>
+        </ul>
+      </div>
+      <div class="main1">
+        <img src="download (1).jpg" width="200px" height="200px" />
+        <p><b>Karina</b></p>
+      </div>
+      <div class="main2">
+        <img
+          src="æspa Giselle Aesthetic viral blue icon💙🥂✨.jpg"
+          width="200px"
+          height="200px"
+        />
+        <p><b>Giselle</b></p>
+      </div>
+      <div class="main3">
+        <img src="★.jpg" width="200px" height="200px" />
+        <p><b>Winter</b></p>
+      </div>
+      <div class="main4">
+        <img src="✿.jpg" width="200px" height="200px" />
+        <p><b>Ningning</b></p>
+      </div>
+
+      <div class="footer">&copyaespalovers</div>
+    </div>
+  </body>
+</html>
