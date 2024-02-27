@@ -13,11 +13,6 @@
         font-size: 30px;
         text-align: center;
       }
-      .menu {
-        grid-area: menu;
-        display: flex;
-        font-size: 24px;
-      }
       .main1 {
         grid-area: main1;
         text-align: center;
@@ -40,6 +35,7 @@
 
       img {
         padding: 30px;
+        border-radius: 20px;
       }
       .footer {
         grid-area: footer;
@@ -53,10 +49,10 @@
       .grid-container {
         display: grid;
         grid-template-areas:
-          "header header header header header"
-          "menu main1 main2 main3 main4"
-          "menu main1 main2 main3 main4"
-          "footer footer footer footer footer";
+          "header header header header"
+          "main1 main2 main3 main4"
+          "main1 main2 main3 main4"
+          "footer footer footer footer";
         grid-template-rows: 1fr 1fr 1.5fr 1fr;
         gap: 10px;
         background-color: purple;
@@ -76,15 +72,6 @@
     <div class="grid-container">
       <div class="header">
         <h1>Aespa</h1>
-      </div>
-      <div class="menu">
-        <ul>
-          <li>Members</li>
-          <li>Karina</li>
-          <li>Winter</li>
-          <li>Giselle</li>
-          <li>Ningning</li>
-        </ul>
       </div>
       <div class="main1">
         <img src="download (1).jpg" width="200px" height="200px" />
